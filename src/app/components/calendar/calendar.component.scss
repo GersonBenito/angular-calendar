@@ -1,0 +1,51 @@
+$tomato: #E76161;
+$white: #fff;
+$gray: #9BA4B5;
+
+@mixin celda($border, $bg, $color, $cursor, $padding: 8px){
+    padding: $padding;
+    border: $border;
+    background: $bg;
+    color: $color;
+    cursor: $cursor;
+}
+
+.schedule{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    .day{
+        text-align: center;
+        width: 100%;
+        font-weight: 400;
+        .day-hour{
+            @include celda(none, none, none, none);
+        }
+        .day-container{
+            @include celda(none, $tomato, white, none);
+        }
+        .hour-container{
+            &:hover{
+                background-color: #A6D0DD;
+                transition: background-color, 0.7s;
+            }
+            @include celda(1px solid $gray, none, none, pointer, 0px);
+            span{
+                display: inherit;
+                padding: 8px;
+            }
+        }
+        .hour-container-info{
+            @include celda(1px solid $gray, none, none, default);
+        }
+    }
+}
+
+// .select{
+//     padding: 0px;
+// }
+
+// .no-select{
+
+// }

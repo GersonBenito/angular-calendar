@@ -1,0 +1,70 @@
+{
+    "days": [
+        {
+            "day":"monday", 
+            "selected": false
+        },
+        {
+            "day":"tuesday", 
+            "selected": false
+        },
+        {
+            "day":"wednesday", 
+            "selected": false
+        },
+        {
+            "day":"thursday", 
+            "selected": false
+        },
+        {
+            "day":"friday", 
+            "selected": false
+        },
+        {
+            "day":"saturday", 
+            "selected": false
+        },
+        {
+            "day":"sunday", 
+            "selected": false
+        }
+    ],
+    "hours": [
+        {
+            "hour":"8:00", 
+            "selected": false
+        },
+        {
+            "hour":"8:30", 
+            "selected": false
+        },
+        {
+            "hour":"9:00", 
+            "selected": false
+        },
+        {
+            "hour":"9:30", 
+            "selected": false
+        },
+        {
+            "hour":"10:00", 
+            "selected": false
+        },
+        {
+            "hour":"10:30", 
+            "selected": false
+        },
+        {
+            "hour":"11:00", 
+            "selected": false
+        },
+        {
+            "hour":"11:30", 
+            "selected": false
+        },
+        {
+            "hour":"12:00", 
+            "selected": false
+        }
+    ]
+}

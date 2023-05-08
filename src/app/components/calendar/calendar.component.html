@@ -1,0 +1,27 @@
+<div class="schedule">
+    <div class="day">
+        <div class="day-hour">Dia / Hora</div>
+        <div class="hour-container-info" *ngFor="let hour of hours">
+            {{hour.hour}}
+        </div>
+    </div>
+    <div class="day" *ngFor="let day of days">
+        <div class="day-container">
+            {{day.day}}
+        </div>
+        <div 
+            class="hour-container" 
+            *ngFor="let hour of hours" 
+            (click)="getData(day, hour)"
+            [ngStyle]="{
+                'padding': (hour.selected && day.selected) ? '0px' : '12px'
+            }"
+        >
+            <span 
+                [ngStyle]="{
+                    'background': (hour.selected && day.selected) ? '#A6D0DD' : '' 
+                }"
+            >{{(hour.selected && day.selected) ? hour.hour : '' }}</span>
+        </div>
+    </div>
+</div>
